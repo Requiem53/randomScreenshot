@@ -8,7 +8,7 @@ def get_random_numbers(length):
     rNumbers_str = ''.join(random.choice(string.digits) for i in range(length))
     linklist.append(rNumbers_str)
 
-chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'    
+#chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'    
 print('Look for a random screenshot')
 
 numberofPages = input('Type the number of pages: ')
@@ -21,7 +21,7 @@ while(count < numberofPages):
     get_random_letters(2)
     get_random_numbers(4)
     print(linklist)
-    webbrowser.get(chrome_path).open('https://prnt.sc/' + linklist[0] + linklist[1])
+    webbrowser.open('https://prnt.sc/' + linklist[0] + linklist[1])
     linklist.clear()
     
 
